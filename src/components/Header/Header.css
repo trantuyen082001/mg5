@@ -1,0 +1,15 @@
+.navbar {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    color: rgb(240, 64, 152);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

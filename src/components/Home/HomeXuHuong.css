@@ -1,0 +1,47 @@
+.XuHuong_container {
+    position: relative;
+}
+
+.xuhuong_group {
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+.title span {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.xuhuong_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.item:hover {
+    opacity: 0.8;
+}
+
+.item_name img {
+    width: 175px;
+    height: 125px;
+    display: block;
+    padding: 5px;
+    position: relative;
+    margin: 0 5px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.item_name span {
+    position: absolute;
+    transform: translate(-40px,-35px);
+    color: white;
+    font-weight: bold;
+}
