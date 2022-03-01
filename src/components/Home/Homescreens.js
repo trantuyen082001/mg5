@@ -1,7 +1,7 @@
 import React from 'react'
-import imgHome from "../img/photo.jpg";
 import "../Home/HomeScreen.css";
 import HomeXuHuong from './HomeXuHuong';
+import ListRoom from './ListRoom';
 
 const Homescreens = () => {
   return (
@@ -31,6 +31,7 @@ const Homescreens = () => {
           </div>
        </div>
        <HomeXuHuong/>
+       <ListRoom/>
     </>
   )
 }

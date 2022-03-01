@@ -1,0 +1,20 @@
+.listRoom_row {
+    padding: 10px;
+
+}
+
+.listRoom_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listRoom_item .listRoom_image {
+    width: 14rem;
+    height: 10rem;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
