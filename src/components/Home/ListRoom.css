@@ -1,6 +1,18 @@
-.listRoom_row {
-    padding: 10px;
+.ListRoom {
+    margin-top: 20px;
+    padding-top: 20px;
+}
 
+.listRoom_container {
+    position: relative;
+    display: flex;
+    padding: 0 32px;
+    justify-content: center;
+    margin: 0 32px;
+}
+
+.listRoom_row {
+    /* padding: 10px; */
 }
 
 .listRoom_item {
@@ -11,10 +23,153 @@
 }
 
 .listRoom_item .listRoom_image {
-    width: 14rem;
-    height: 10rem;
+    width: 216px;
+    height: 151px;
     background-position: center center;
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.listRoom_left h2,
+.listRoom_right h2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+/* ----------- Left ---------- */
+
+.listRoom_left {
+    background-color: #e4ebf5;
+    width: 66%;
+}
+
+.listRoom_left .listRoom_row{
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.listRoom_left .listRoom_container {
+    padding: 8px 0;
+    display: block;
+}
+
+.listRoom_left .listRoom_row .listRoom_item {
+    margin-bottom: 5px;
+}
+
+.listRoom_left .name .left_name{
+    margin-bottom: 2px;
+    color: black;
+    font-weight: bold;
+}
+
+.listRoom_left .block_desc {
+    width: 332px;
+}
+
+.listRoom_left .available {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.listRoom_left .gender_space {
+    color: black;
+    justify-content: space-between;
+    line-height: 24px;
+}
+
+.listRoom_left .gender_space .card-text {
+    margin-bottom: 5px;
+}
+
+.listRoom_left .left_address {
+    color: black;
+}
+
+.listRoom_left .block {
+    display: flex;
+    align-items: center;
+}
+
+.listRoom_left .block_price{
+    padding: 0 50px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #f7348e;
+}
+
+/*------- Right --------*/
+.listRoom_right {
+    position: relative;
+    background-color: #e4ebf5;
+    width: 34%;
+    margin-left: 30px;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.listRoom_right .listRoom_item {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.listRoom_right .listRoom_row .listRoom_container {
+    padding: 0;
+    display: block;
+}
+
+.listRoom_right .listRoom_item .listRoom_image {
+    width: 308px;
+    height: 152px;
+}
+
+.listRoom_right .right_title {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 24px;
+    height: 48px;
+    -webkit-line-clamp: 2;
+    font-family: Nunito-SemiBold;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    transform: translateX(-28px);
+    width: 305px;
+}
+
+.listRoom_right .block_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listRoom_right .block_desc .right_address {
+    font-size: 16px;
+    transform: translateX(-28px);
+    color: black;
+}
+
+.listRoom_right .block_desc .right_price {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f7348e;
+    font-weight: bold;
+    transform: translateX(28px);
 }
