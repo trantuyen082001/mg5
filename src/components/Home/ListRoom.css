@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px 0 0 0;
 }
 
 .listRoom_item .listRoom_image {
@@ -127,6 +128,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    transform: translateY(22px);
 }
 
 .left_button::after {
@@ -217,4 +219,30 @@
 .block_price .right_price {
     margin-right: 2px;
     font-weight: bold;
+}
+
+.right_button {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right_button::after {
+    content: "";
+    position: absolute;
+    width: 388px;
+    border-top: 1px solid rgb(201, 198, 198);
+    margin-bottom: 5px;
+    transform: translateY(-30px);
+}
+
+.right_button .btn_right {
+    width: 190px;
+    height: 47px;
+    color: black;
+    border: none;
+    box-sizing: none;
 }

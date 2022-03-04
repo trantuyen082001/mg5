@@ -5,6 +5,9 @@ import './ListRoom.css'
 
 const ListRoom = () => {
 
+    var listRoom_left = listRoom.slice(3)
+    console.log(listRoom_left)
+
   return ( 
     <div className='ListRoom'>
         <div className='listRoom_container'>
@@ -21,10 +24,10 @@ const ListRoom = () => {
                                     </div>
                                     <div className='block'>
                                         <div className='block_desc'>
-                                            <Card.Text className='available'><i class="fa-solid fa-house-user"></i>  {listRoom.available}</Card.Text>
+                                            <Card.Text className='available'><i className="fa-solid fa-house-user"></i>  {listRoom.available}</Card.Text>
                                             <div className='gender_space' style={{display: 'flex'}}>
-                                                <Card.Text><i class="fa-solid fa-user-group"></i> {listRoom.gender}</Card.Text>
-                                                <Card.Text><i class="fa-solid fa-ruler"></i> {listRoom.space}</Card.Text>
+                                                <Card.Text><i className="fa-solid fa-user-group"></i> {listRoom.gender}</Card.Text>
+                                                <Card.Text><i className="fa-solid fa-ruler"></i> {listRoom.space}</Card.Text>
                                             </div>
                                             <Card.Text className='left_address'><i class="fa-solid fa-location-dot"></i> {listRoom.Address}</Card.Text>
                                         </div>
@@ -46,7 +49,7 @@ const ListRoom = () => {
             <div className='listRoom_right'>
                 <h2>Verified</h2>
                 <Row>
-                    {listRoom.slice(3, listRoom => (
+                    {listRoom_left.map(listRoom => (
                         <Row className="listRoom_row">
                             <Card className="listRoom_item" style={{ width: '18rem' }}>
                                 <Card.Img className="listRoom_image" variant="top" src={listRoom.image} />
@@ -66,6 +69,9 @@ const ListRoom = () => {
                         </Row>
                     ))}
                 </Row>
+                <div className='right_button'>
+                        <Button className='btn_right' variant='primary'>Xem tất cả</Button>
+                </div>
             </div>
         </div>
     </div>
