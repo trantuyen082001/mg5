@@ -76,6 +76,39 @@ const listRoom = [
         price: '1',
         district: "Quận Thanh Khê"
     },
+    {
+        _id: '8',
+        name: 'Phòng trọ 17m2 đường Núi Thành, Quận Hải Châu',
+        available: 'Còn Phòng',
+        image: '/images/phong8.jpg',
+        gender: 'Nam & Nữ',
+        Address: '23 Núi Thành, Quận Hải Châu',
+        space: '17m2',
+        price: '2.2',
+        district: "Quận Hải Châu"
+    },
+    {
+        _id: '9',
+        name: 'Phòng trọ 91/53, Cù Chính Lan, Quận Thanh Khê',
+        available: 'Còn Phòng',
+        image: '/images/phong9.jpg',
+        gender: 'Nam & Nữ',
+        Address: '91/53 đường Cù Chính Lan, Quận Thanh Khê',
+        space: '25m2',
+        price: '2.1',
+        district: "Quận Thanh Khê"
+    },
+    {
+        _id: '10',
+        name: 'Phòng trọ Mai Lão Bạng, Quận Hải Châu',
+        available: 'Còn Phòng',
+        image: '/images/phong10.jpg',
+        gender: 'Nam & Nữ',
+        Address: '83 Đinh Núp, Quận Thanh Khê',
+        space: '16m2',
+        price: '1.8',
+        district: "Quận Hải Châu"
+    },
 ]
 
 export default listRoom;

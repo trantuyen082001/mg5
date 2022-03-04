@@ -79,12 +79,13 @@
 .listRoom_left .available {
     color: black;
     margin-bottom: 5px;
+    line-height: 30px;
 }
 
 .listRoom_left .gender_space {
     color: black;
     justify-content: space-between;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .listRoom_left .gender_space .card-text {
@@ -93,6 +94,7 @@
 
 .listRoom_left .left_address {
     color: black;
+    line-height: 30px;
 }
 
 .listRoom_left .block {
@@ -105,6 +107,43 @@
     margin-left: 10px;
     font-weight: bold;
     color: #f7348e;
+}
+
+.listRoom_left .block_price .left_price {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.left_price  h5 {
+    padding-bottom: 0;
+}
+
+.left_button {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.left_button::after {
+    content: "";
+    position: absolute;
+    width: 806px;
+    border-top: 1px solid rgb(201, 198, 198);
+    margin-bottom: 5px;
+    transform: translateY(-30px);
+}
+
+.left_button .btn_left {
+    width: 300px;
+    height: 50px;
+    color: black;
+    border: none;
+    box-sizing: none;
 }
 
 /*------- Right --------*/
@@ -166,10 +205,16 @@
     color: black;
 }
 
-.listRoom_right .block_desc .right_price {
+.listRoom_right .block_desc .block_price {
+    display: flex;
     font-size: 16px;
     margin-bottom: 8px;
     color: #f7348e;
     font-weight: bold;
     transform: translateX(28px);
+}
+
+.block_price .right_price {
+    margin-right: 2px;
+    font-weight: bold;
 }

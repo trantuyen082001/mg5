@@ -4,7 +4,8 @@ import listRoom from '../../listRoom'
 import './ListRoom.css'
 
 const ListRoom = () => {
-  return (
+
+  return ( 
     <div className='ListRoom'>
         <div className='listRoom_container'>
             <div className='listRoom_left'>
@@ -25,7 +26,7 @@ const ListRoom = () => {
                                                 <Card.Text><i class="fa-solid fa-user-group"></i> {listRoom.gender}</Card.Text>
                                                 <Card.Text><i class="fa-solid fa-ruler"></i> {listRoom.space}</Card.Text>
                                             </div>
-                                            <Card.Text className='left_address'>{listRoom.Address}</Card.Text>
+                                            <Card.Text className='left_address'><i class="fa-solid fa-location-dot"></i> {listRoom.Address}</Card.Text>
                                         </div>
                                         <div className='block_price'>
                                             <Card.Title className='left_price'>{listRoom.price}</Card.Title>
@@ -38,11 +39,14 @@ const ListRoom = () => {
                         </Row>
                     ))}
                 </Row>
+                <div className='left_button'>
+                        <Button className='btn_left' variant='primary'>Xem tất cả</Button>
+                </div>
             </div>
             <div className='listRoom_right'>
                 <h2>Verified</h2>
                 <Row>
-                    {listRoom.map(listRoom => (
+                    {listRoom.slice(3, listRoom => (
                         <Row className="listRoom_row">
                             <Card className="listRoom_item" style={{ width: '18rem' }}>
                                 <Card.Img className="listRoom_image" variant="top" src={listRoom.image} />
@@ -52,7 +56,10 @@ const ListRoom = () => {
                                     </div>
                                     <div className='block_desc'>
                                         <Card.Text className='right_address'>{listRoom.district}</Card.Text>
-                                        <Card.Title className='right_price'>{listRoom.price}</Card.Title>
+                                        <div className='block_price'>
+                                            <Card.Title className='right_price'>{listRoom.price}</Card.Title>
+                                            <Card.Text>tr/Phòng</Card.Text>
+                                        </div>
                                     </div>
                                 </Card.Body>
                             </Card>
