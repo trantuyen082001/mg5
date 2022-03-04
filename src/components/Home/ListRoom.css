@@ -127,7 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 43px;
     transform: translateY(22px);
 }
 
@@ -199,6 +199,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 246px;
 }
 
 .listRoom_right .block_desc .right_address {
@@ -235,7 +236,7 @@
     position: absolute;
     width: 388px;
     border-top: 1px solid rgb(201, 198, 198);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     transform: translateY(-30px);
 }
 

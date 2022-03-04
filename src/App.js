@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Homescreens from "./components/Home/Homescreens";
@@ -7,11 +7,15 @@ import Homescreens from "./components/Home/Homescreens";
 const App = () => {
   return (
     <>
-      <Header/>
-      <main>
-          <Homescreens/>
-      </main>
-      <Footer/>
+     <Router>
+        <Header/>
+        <main>
+          <Routes>
+            <Route path="/" element={<Homescreens/>} exact/>
+          </Routes>
+        </main>
+        <Footer/>
+      </Router>
     </>
   );
 }

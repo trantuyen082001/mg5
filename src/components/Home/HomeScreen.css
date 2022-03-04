@@ -18,6 +18,25 @@
     object-fit: cover;
 }
 
+.home_postroom {
+    font-size: 80px;
+
+}
+
+.home_desc .text {
+    display: block;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    transform: translateX(850px);
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    width: 145px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.822);
+    cursor: pointer;
+}
+
 .home_title {
     transform: translateX(78px);
     margin-bottom: 10px;
