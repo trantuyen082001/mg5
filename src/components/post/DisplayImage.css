@@ -1,0 +1,15 @@
+.display_container {
+    position: relative;
+}
+
+.display_container h4 {
+    color: black;
+}
+
+.form-control {
+    display: block;
+}
+
+.choose_file {
+    transform: translateY(255px);
+}

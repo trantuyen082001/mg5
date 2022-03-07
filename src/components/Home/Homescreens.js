@@ -11,7 +11,7 @@ const Homescreens = () => {
        <div className='home_container'>
           <div className='home_img'>
               <div className='home_desc'>
-                <LinkContainer className='home_postroom' to='/postroom'>
+                <LinkContainer className='home_postroom' to='/postRoom'>
                     <Navbar.Text className="text">Đăng Phòng</Navbar.Text>
                 </LinkContainer>
                 <div className='home_title'>

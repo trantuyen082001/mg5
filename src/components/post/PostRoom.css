@@ -1,0 +1,83 @@
+.postRoom {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.post_link {
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.postRoom_container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.post_img {
+    position: relative;
+    margin-right: 10px;
+    width: 40%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* -------- post_validation ------- */
+.post_validation {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.validation_inf {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.form-label {
+    margin: 0;
+    color: black;
+}
+
+.form-control {
+    padding: 8px 5px 0 5px;
+}
+
+.post_group {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.post_utilites {
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.post_utilites .form-label {
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+    width: 95px;
+}
+
+.post_validation .post_btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: black;
+}
