@@ -1,9 +1,7 @@
 import React from 'react'
+import imgHome from "../img/photo.jpg";
 import "../Home/HomeScreen.css";
-import {LinkContainer} from 'react-router-bootstrap';
 import HomeXuHuong from './HomeXuHuong';
-import ListRoom from './ListRoom';
-import { Navbar } from 'react-bootstrap';
 
 const Homescreens = () => {
   return (
@@ -11,9 +9,6 @@ const Homescreens = () => {
        <div className='home_container'>
           <div className='home_img'>
               <div className='home_desc'>
-                <LinkContainer className='home_postroom' to='/postRoom'>
-                    <Navbar.Text className="text">Đăng Phòng</Navbar.Text>
-                </LinkContainer>
                 <div className='home_title'>
                   <h1>MR5</h1>
                   <span>Ứng dụng hỗ trợ thuê trọ</span>
@@ -31,12 +26,11 @@ const Homescreens = () => {
                         <i class="fas fa-search"></i>
                       </button>
                     </div>
-                </div>
+                  </div>
               </div>
           </div>
        </div>
        <HomeXuHuong/>
-       <ListRoom/>
     </>
   )
 }
